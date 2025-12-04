@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>
+            A Digital Study of Early Modern European Calendrical Mechanisms
+        </title>
+
+        <link rel="stylesheet" href="dist/reset.css" />
+        <link rel="stylesheet" href="dist/reveal.css" />
+        <link rel="stylesheet" href="dist/theme/beige.css" id="theme" />
+        <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+
+        <style>
+            /* Keep titles in normal case */
+            .reveal h1,
+            .reveal h2,
+            .reveal h3,
+            .reveal h4,
+            .reveal h5,
+            .reveal h6 {
+                text-transform: none; /* remove uppercase */
+            }
+
+            /* Make the first slide title smaller */
+            .reveal section:first-of-type h1 {
+                font-size: 2.5em; /* adjust as needed */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- TITLE SLIDE -->
+                <section
+                    data-background-image="a1.jpg"
+                    data-background-size="cover"
+                    data-background-opacity="0.25"
+                >
+                    <h1>
+                        A Digital Study of Early Modern European Calendrical
+                        Mechanisms
+                    </h1>
+                    <p>Guang Yang</p>
+                    <p>History of Science · Digital Humanities</p>
+                </section>
+
+                <!-- SECOND SLIDE -->
+                <section
+                    data-background-image="a1.jpg"
+                    data-background-size="cover"
+                    data-background-opacity="0.25"
+                >
+                    <h2>What I Will Do</h2>
+                    <ul>
+                        <li class="fragment">
+                            Digital study of Early Modern European calendrical
+                            mechanisms
+                        </li>
+                        <li class="fragment">
+                            Case study: A 15th-century mechanical volvelle
+                        </li>
+                        <li class="fragment">
+                            Research question:
+                            <em
+                                >To what extent were the European calendrical
+                                mechanisms influence by Islamic calentrical
+                                design and mathematical theory?</em
+                            >
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>What Is a Volvelle?</h2>
+                    <div
+                        style="
+                            display: flex;
+                            align-items: flex-start;
+                            text-align: left;
+                            margin-top: 50px;
+                        "
+                    >
+                        <div
+                            class="fragment"
+                            style="
+                                flex: 1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            "
+                        >
+                            <div style="text-align: center; width: 95%">
+                                <img
+                                    src="a2.jpg"
+                                    alt="A historical paper volvelle"
+                                    style="
+                                        width: 90%;
+                                        border: 4px solid #586e75;
+                                        border-radius: 4px;
+                                    "
+                                />
+                                <p
+                                    style="
+                                        font-size: 0.4em;
+                                        margin-top: 2px;
+                                        color: #444;
+                                    "
+                                >
+                                    British Library, Egerton MS 848 (15th
+                                    century)
+                                </p>
+                            </div>
+                        </div>
+                        <div style="flex: 1; padding-left: 20px">
+                            <ul>
+                                <li class="fragment">
+                                    A rotating calendar device with discs
+                                </li>
+                                <li class="fragment">
+                                    Made of paper, parchment, wood, or metal
+                                </li>
+                                <li class="fragment">Often in books/codices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>How Does a Volvelle Work?</h2>
+                    <video
+                        src="noaudio.mp4"
+                        style="
+                            width: 75%;
+                            border: 4px solid #444;
+                            border-radius: 8px;
+                        "
+                        controls
+                        autoplay
+                        muted
+                        loop
+                    ></video>
+                    <p style="margin-top: 20px; font-size: 0.5em">
+                        Source: https://www.youtube.com/watch?v=cdgFxuw5I8M
+                    </p>
+                </section>
+
+                <!-- RESEARCH MOTIVATION -->
+                <section>
+                    <h2>Why I Am Interested</h2>
+                    <div
+                        style="
+                            display: flex;
+                            align-items: flex-start;
+                            margin-top: 20px;
+                        "
+                    >
+                        <div style="flex: 0 0 auto; margin-right: 30px">
+                            <img
+                                src="a3.jpg"
+                                alt="Volvelle in museum"
+                                style="max-width: 350px; height: auto"
+                            />
+                            <p
+                                style="
+                                    font-size: 0.4em;
+                                    margin-top: 2px;
+                                    text-align: center;
+                                    color: #444;
+                                "
+                            >
+                                Nuremberg Museum
+                            </p>
+                        </div>
+                        <div style="flex: 1">
+                            <ul>
+                                <li class="fragment">
+                                    Saw a sophisticated volvelle in museum.
+                                </li>
+                                <li class="fragment">Calendar:</li>
+                                <ul>
+                                    <li class="fragment">
+                                        History of science: Astronomy,
+                                        mathematics.
+                                    </li>
+                                    <li class="fragment">Material culture.</li>
+                                    <li class="fragment">
+                                        From diverse cultural traditions:
+                                        European, Islamic, Chinese, etc.
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Why You Should Be Interested</h2>
+                    <ul>
+                        <li class="fragment">
+                            Calendars are part of everyday life
+                        </li>
+                        <li class="fragment">
+                            Intersection: history of science, technology, and
+                            common knowledge
+                        </li>
+                        <li class="fragment">
+                            Beautiful early interactive books & science
+                            instruments
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- METHODOLOGY -->
+                <section>
+                    <h2>Methodology</h2>
+
+                    <div
+                        style="
+                            max-width: 100%;
+                            margin: auto;
+                            font-size: 0.8em;
+                            line-height: 1.3;
+                        "
+                    >
+                        <div
+                            style="
+                                display: flex;
+                                gap: 40px;
+                                margin-top: 40px;
+                                text-align: left;
+                            "
+                        >
+                            <div style="flex: 1">
+                                <h3 style="font-size: 1.2em">
+                                    Historical Methodology
+                                </h3>
+                                <ul>
+                                    <li class="fragment">
+                                        Material history of scientific
+                                        instruments
+                                    </li>
+                                    <li class="fragment">
+                                        Comparative study of calendrical
+                                        knowledge traditions
+                                    </li>
+                                    <li class="fragment">
+                                        Hermeneutic analysis of diagrams +
+                                        explanatory texts
+                                    </li>
+                                    <li class="fragment">
+                                        On-site consultation of museum
+                                        collections
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="flex: 1">
+                                <h3 style="font-size: 1.2em">
+                                    Technical Methodology
+                                </h3>
+                                <ul>
+                                    <li class="fragment">
+                                        <strong>Digital Visualization:</strong>
+                                        SVG/Canvas, geometric modelling, JS
+                                        animation
+                                    </li>
+                                    <li class="fragment">
+                                        <strong>Image Processing:</strong>
+                                        extract circular diagrams, edge
+                                        detection, object detection
+                                    </li>
+                                    <li class="fragment">
+                                        <strong>Text Analysis:</strong> small
+                                        corpus, keyword extraction, clustering,
+                                        topic hints
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VOLVELLE INTERACTIVE SLIDE (SCALED) -->
+                <section>
+                    <h2>Digital Reconstruction</h2>
+                    <div
+                        id="astrolabePanel"
+                        class="astrolabe panel"
+                        style="margin: auto; width: 550px; height: 550px"
+                    >
+                        <div class="front" style="width: 100%; height: 100%">
+                            <canvas
+                                id="canvasFront"
+                                width="800"
+                                height="800"
+                                style="
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    margin: auto;
+                                "
+                            ></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Credit line -->
+                    <p
+                        style="
+                            font-size: 0.4em;
+                            text-align: center;
+                            margin-top: 5px;
+                        "
+                    >
+                        Credit: Richard Wymarc | Source:
+                        <a
+                            href="https://www.astrolabeproject.com/"
+                            target="_blank"
+                            >astrolabeproject.com</a
+                        >
+                    </p>
+
+                    <!-- Preload images -->
+                    <div id="preload" style="display: none">
+                        <img src="base.png" width="1" height="1" alt="" />
+                        <img src="calendar.png" width="1" height="1" alt="" />
+                        <img src="sun.png" width="1" height="1" alt="" />
+                        <img src="moon.png" width="1" height="1" alt="" />
+                    </div>
+                </section>
+
+                <script src="jquery.min.js"></script>
+                <script>
+                    $(function () {
+                        let calendarSelected = false,
+                            sunSelected = false,
+                            moonSelected = false;
+                        let calendarAngle = 0,
+                            sunAngle = 0,
+                            moonAngle = 0;
+                        let mouseX, mouseY, mouseXLast, mouseYLast;
+
+                        const canvasF = document.getElementById("canvasFront");
+                        const ctxF = canvasF.getContext("2d");
+
+                        const cxF = canvasF.width / 2,
+                            cyF = canvasF.height / 2;
+                        const wF = canvasF.width,
+                            hF = canvasF.height;
+
+                        const baseImg = new Image();
+                        baseImg.src = "base.png";
+                        const calendarImg = new Image();
+                        calendarImg.src = "calendar.png";
+                        const sunImg = new Image();
+                        sunImg.src = "sun.png";
+                        const moonImg = new Image();
+                        moonImg.src = "moon.png";
+
+                        let imagesLoaded = 0;
+                        [baseImg, calendarImg, sunImg, moonImg].forEach(
+                            (img) => {
+                                img.onload = () => {
+                                    imagesLoaded++;
+                                    if (imagesLoaded === 4) draw();
+                                };
+                            },
+                        );
+
+                        function draw() {
+                            ctxF.clearRect(0, 0, wF, hF);
+
+                            // Base
+                            ctxF.save();
+                            ctxF.translate(cxF, cyF);
+                            ctxF.drawImage(
+                                baseImg,
+                                0,
+                                0,
+                                baseImg.width,
+                                baseImg.height,
+                                -wF / 2,
+                                -hF / 2,
+                                wF,
+                                hF,
+                            );
+                            ctxF.restore();
+
+                            // Calendar
+                            ctxF.save();
+                            ctxF.translate(cxF, cyF);
+                            ctxF.rotate(calendarAngle);
+                            ctxF.drawImage(
+                                calendarImg,
+                                0,
+                                0,
+                                calendarImg.width,
+                                calendarImg.height,
+                                -wF / 2,
+                                -hF / 2,
+                                wF,
+                                hF,
+                            );
+                            ctxF.restore();
+
+                            // Sun
+                            ctxF.save();
+                            ctxF.translate(cxF, cyF);
+                            ctxF.rotate(sunAngle);
+                            ctxF.drawImage(
+                                sunImg,
+                                0,
+                                0,
+                                sunImg.width,
+                                sunImg.height,
+                                -wF / 2,
+                                -hF / 2,
+                                wF,
+                                hF,
+                            );
+                            ctxF.restore();
+
+                            // Moon
+                            ctxF.save();
+                            ctxF.translate(cxF, cyF);
+                            ctxF.rotate(moonAngle);
+                            ctxF.drawImage(
+                                moonImg,
+                                0,
+                                0,
+                                moonImg.width,
+                                moonImg.height,
+                                -wF / 2,
+                                -hF / 2,
+                                wF,
+                                hF,
+                            );
+                            ctxF.restore();
+
+                            ctxF.font = "12px Arial";
+                            ctxF.fillText(
+                                "astrolabeproject.com",
+                                wF - 130,
+                                hF - 15,
+                            );
+                        }
+
+                        function getPos(canvas, clientX, clientY) {
+                            const rect = canvas.getBoundingClientRect();
+                            return {
+                                x:
+                                    (clientX - rect.left) *
+                                    (canvas.width / rect.width),
+                                y:
+                                    (clientY - rect.top) *
+                                    (canvas.height / rect.height),
+                            };
+                        }
+
+                        function drawMoonPath() {
+                            ctxF.save();
+                            ctxF.translate(cxF, cyF);
+                            ctxF.rotate(moonAngle);
+                            ctxF.beginPath();
+                            ctxF.moveTo(0, -125);
+                            ctxF.lineTo(0, -335);
+                            ctxF.lineTo(-15, -320);
+                            ctxF.lineTo(-80, -175);
+                            ctxF.lineTo(-80, -105);
+                            ctxF.closePath();
+                            ctxF.restore();
+                        }
+
+                        function drawSunPath() {
+                            ctxF.save();
+                            ctxF.translate(cxF, cyF);
+                            ctxF.rotate(sunAngle);
+                            ctxF.beginPath();
+                            ctxF.moveTo(130, 0);
+                            ctxF.lineTo(335, 0);
+                            ctxF.lineTo(325, -15);
+                            ctxF.lineTo(180, -80);
+                            ctxF.lineTo(110, -80);
+                            ctxF.closePath();
+                            ctxF.restore();
+                        }
+
+                        function drawCalendarPath() {
+                            ctxF.save();
+                            ctxF.translate(cxF, cyF);
+                            ctxF.rotate(calendarAngle);
+                            ctxF.beginPath();
+                            ctxF.arc(0, 0, 305, 0, 2 * Math.PI);
+                            ctxF.restore();
+                        }
+
+                        function drawCalendarCutoutPath() {
+                            ctxF.save();
+                            ctxF.translate(cxF, cyF);
+                            ctxF.rotate(calendarAngle);
+                            ctxF.beginPath();
+                            ctxF.arc(0, 0, 155, 0, 2 * Math.PI);
+                            ctxF.restore();
+                        }
+
+                        function updateAngles(x0, y0, x1, y1) {
+                            let dx1 = x0 - cxF,
+                                dy1 = y0 - cyF;
+                            let dx2 = x1 - cxF,
+                                dy2 = y1 - cyF;
+                            let angle1 = Math.atan2(dy1, dx1);
+                            let angle2 = Math.atan2(dy2, dx2);
+                            let delta = angle1 - angle2;
+
+                            if (moonSelected) moonAngle -= delta;
+                            else if (sunSelected) sunAngle -= delta;
+                            else if (calendarSelected) calendarAngle -= delta;
+
+                            draw();
+                        }
+
+                        function updateSelected(x, y) {
+                            drawMoonPath();
+                            moonSelected = ctxF.isPointInPath(x, y);
+                            if (!moonSelected) {
+                                drawSunPath();
+                                sunSelected = ctxF.isPointInPath(x, y);
+                            }
+                            if (!moonSelected && !sunSelected) {
+                                drawCalendarPath();
+                                let onCalendar = ctxF.isPointInPath(x, y);
+                                drawCalendarCutoutPath();
+                                calendarSelected =
+                                    onCalendar && !ctxF.isPointInPath(x, y);
+                            }
+                        }
+
+                        // Mouse handlers
+                        canvasF.addEventListener("mousedown", (e) => {
+                            const pos = getPos(canvasF, e.clientX, e.clientY);
+                            mouseX = pos.x;
+                            mouseY = pos.y;
+                            updateSelected(mouseX, mouseY);
+                        });
+
+                        canvasF.addEventListener("mousemove", (e) => {
+                            if (
+                                !moonSelected &&
+                                !sunSelected &&
+                                !calendarSelected
+                            )
+                                return;
+                            mouseXLast = mouseX;
+                            mouseYLast = mouseY;
+                            const pos = getPos(canvasF, e.clientX, e.clientY);
+                            mouseX = pos.x;
+                            mouseY = pos.y;
+                            updateAngles(
+                                mouseXLast,
+                                mouseYLast,
+                                mouseX,
+                                mouseY,
+                            );
+                        });
+
+                        canvasF.addEventListener("mouseup", () => {
+                            moonSelected = false;
+                            sunSelected = false;
+                            calendarSelected = false;
+                        });
+                        canvasF.addEventListener("mouseout", () => {
+                            moonSelected = false;
+                            sunSelected = false;
+                            calendarSelected = false;
+                        });
+
+                        // Touch handlers
+                        canvasF.addEventListener(
+                            "touchstart",
+                            (e) => {
+                                e.preventDefault();
+                                const pos = getPos(
+                                    canvasF,
+                                    e.touches[0].clientX,
+                                    e.touches[0].clientY,
+                                );
+                                mouseX = pos.x;
+                                mouseY = pos.y;
+                                updateSelected(mouseX, mouseY);
+                            },
+                            false,
+                        );
+
+                        canvasF.addEventListener(
+                            "touchmove",
+                            (e) => {
+                                e.preventDefault();
+                                if (
+                                    !moonSelected &&
+                                    !sunSelected &&
+                                    !calendarSelected
+                                )
+                                    return;
+                                mouseXLast = mouseX;
+                                mouseYLast = mouseY;
+                                const pos = getPos(
+                                    canvasF,
+                                    e.touches[0].clientX,
+                                    e.touches[0].clientY,
+                                );
+                                mouseX = pos.x;
+                                mouseY = pos.y;
+                                updateAngles(
+                                    mouseXLast,
+                                    mouseYLast,
+                                    mouseX,
+                                    mouseY,
+                                );
+                            },
+                            true,
+                        );
+
+                        canvasF.addEventListener(
+                            "touchend",
+                            () => {
+                                moonSelected = false;
+                                sunSelected = false;
+                                calendarSelected = false;
+                            },
+                            false,
+                        );
+                        document.body.addEventListener(
+                            "touchcancel",
+                            () => {
+                                moonSelected = false;
+                                sunSelected = false;
+                                calendarSelected = false;
+                            },
+                            false,
+                        );
+                    });
+                </script>
+
+                <!-- EXPECTED OUTPUTS -->
+                <section>
+                    <h2>Expected Outputs</h2>
+                    <ul style="margin-top: 40px">
+                        <li class="fragment">
+                            Digital reconstruction of a volvelle
+                        </li>
+                        <li class="fragment">
+                            Dataset of historical calendrical diagrams
+                        </li>
+                        <li class="fragment">
+                            Analytical study of volvelle’s time encoding
+                        </li>
+                        <li class="fragment">
+                            Reflections on digital methods in history of science
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- END -->
+                <section>
+                    <h1>Thank You</h1>
+                </section>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/zoom/zoom.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/search/search.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+
+        <script>
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                center: true,
+                hash: true,
+                transition: "convex", // <— default slide transition
+                backgroundTransition: "fade", // <— background transition
+                plugins: [
+                    RevealZoom,
+                    RevealNotes,
+                    RevealSearch,
+                    RevealMarkdown,
+                    RevealHighlight,
+                ],
+            });
+        </script>
+    </body>
+</html>
